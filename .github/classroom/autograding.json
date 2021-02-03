@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "No binary files",
+      "setup": "",
+      "run": "find . -exec file '{}' \\; | grep  ELF ; test $? -eq 1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}
